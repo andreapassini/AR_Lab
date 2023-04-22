@@ -47,3 +47,23 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: QRCode
     m_Texture: {fileID: 2800000, guid: a6fd8503774c0402aa403884f5b77f39, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5646092842049324428
+      m_GuidHigh: 4591089609190567599
+    m_SerializedTextureGuid:
+      m_GuidLow: 17772516751411196185
+      m_GuidHigh: 6390492069792328121
+    m_Size: {x: 0.3612, y: 0.3612}
+    m_SpecifySize: 1
+    m_Name: marker1
+    m_Texture: {fileID: 2800000, guid: 948b3119a9d2f6a4b929ecdfad96af58, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5077552852450071494
+      m_GuidHigh: 4785037101618639798
+    m_SerializedTextureGuid:
+      m_GuidLow: 9850675617716793985
+      m_GuidHigh: 1841494418150430232
+    m_Size: {x: 0.3612, y: 0.3612}
+    m_SpecifySize: 1
+    m_Name: marker2
+    m_Texture: {fileID: 2800000, guid: 7f9c7281a14888b41896b8a96a4d8e19, type: 3}
