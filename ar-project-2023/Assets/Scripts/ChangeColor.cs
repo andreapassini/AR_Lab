@@ -1,19 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
+
     private Renderer _renderer;
 
+    // Start is called before the first frame update
     void Start()
     {
-        _renderer = transform.GetComponent<Renderer>();
+        _renderer = GetComponent<Renderer>();
     }
 
-    public void OnMouseDOw()
+    public void OnMouseDown()
     {
-        var color = _renderer.material.color == Color.red ? Color.blue : Color.red;
-        _renderer.material.color = color;
+        _renderer.material.color =
+            _renderer.material.color == Color.red ? Color.blue : Color.red;
     }
+    
+    
 }

@@ -1,21 +1,21 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace DefaultNamespace
+public class ChangeColorClickHandler : MonoBehaviour, IPointerClickHandler
 {
-    public class ChangeColorClickHandler: MonoBehaviour, IPointerClickHandler
+    private Renderer _renderer;
+    
+    // Start is called before the first frame update
+    void Start()
     {
-        private Renderer _renderer;
+        _renderer = GetComponent<Renderer>();
+    }
 
-        void Start()
-        {
-            _renderer = transform.GetComponent<Renderer>();
-        }
-        
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            var color = _renderer.material.color == Color.yellow ? Color.green : Color.yellow;
-            _renderer.material.color = color;
-        }
+    public void OnPointerClick(PointerEventData pointerEventData)
+    {
+        _renderer.material.color =
+            _renderer.material.color == Color.yellow ? Color.green : Color.yellow;
     }
 }
