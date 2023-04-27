@@ -15,3 +15,14 @@ Aggiorna la coordinata della telecamera in base alla posizione dell'origine nel 
 
 ## Build Settings
 
+
+&nbsp;
+
+
+# **P04**
+- Import **Nuitrack SDK**
+- Nuitrakc -> Tutorial -> Avatar Animation -> Scenes -> RiggedModel2
+- Remove the previous prefab and add the model given by the teacher
+- Add the Component Advanced Rigged Avatar
+- Bound the bones of the upperbody in the script
+- In NuitrackScripts, check the function associated with the Init Event (Unity Event), make sure that is GameObject.SetActive and it's set to true
